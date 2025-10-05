@@ -1,10 +1,23 @@
-import { Button } from '@/components/ui/button';
-import Image from 'next/image';
+import {
+  Header,
+  Hero,
+  HowItWorks,
+  WhatToAsk,
+  PricingSection,
+  CTA,
+  Footer,
+} from '@/components/landing';
 
 export default function Home() {
   return (
-    <div className='container'>
-      <Button>Book Appointment</Button>
+    <div className='min-h-screen bg-background'>
+      <Header />
+      <Hero />
+      <HowItWorks />
+      <WhatToAsk />
+      <PricingSection />
+      <CTA />
+      <Footer />
     </div>
   );
 }
